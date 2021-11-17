@@ -10,6 +10,10 @@ const SimpleInput = (props) => {
   const formSubmissionHandler = (event) => {
     event.preventDefault();
 
+    if (enteredName === '') {
+      return;
+    }
+
     console.log(enteredName);
   };
 
